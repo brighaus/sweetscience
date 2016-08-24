@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<link rel="stylesheet" href="css/normalize.css" />
+<link rel="stylesheet" href="css/skeleton.css" />
+<link rel="stylesheet" href="css/app.css" />
+<head>
+    <title>Javascript Boxing Coach</title>
+</head>
+<body>
+<div class="container">
+<h2>
+    Boxing <small>The sweet science...</small>
+</h2>
+<p>This boxing trainer calls out combinations for the duration of the round. You can use it to shadow box or to throw down on a heavy bag. Hit the start button to begin working out.</p>
+<div class="row">
+    <div class="six columns">
+      <label for="selectRoutine">Select routine</label>
+      <select class="u-full-width" id="selectRoutine">
+        <option value="j" disabled>Jabs</option>
+        <option value="jch" selected>Jab, Cross, Hook</option>
+        <option value="b" disabled>Body Work</option> 
+      </select>
+    </div>
+    <div class="six columns">
+        <label for="numRounds">Number of rounds</label>
+        <select id="numRounds" class="u-full-width">
+            <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+        </select>
+    </div>
+</div>
+<div class="row">
+    <div class="six columns">
+       <label for="selectRoundtime">Round time</label>
+       <select class="u-full-width" id="selectRoundtime">
+        <option value="30">30 seconds</option>
+        <option value="60" selected>1 minute</option>
+        <option value="90">1.5 minutes</option>
+        <option value="120">2 minutes</option>
+        <option value="150">2.5 minutes</option>
+        <option value="180">3 minutes</option>
+        <option value="300">5 minutes</option>
+      </select>
+    </div>
+    <div class="six columns">
+        <label for="selectBreaktime">Break time</label>
+       <select class="u-full-width" id="selectBreaktime">
+        <option value="15">15 seconds</option>
+        <option value="30" selected>30 seconds</option>
+        <option value="60">1 minute</option>
+        <option value="90">1.5 minutes</option>
+        <option value="120">2 minutes</option>
+        <option value="150">2.5 minutes</option>
+        <option value="180">3 minutes</option>
+      </select>
+    </div>
+</div>
+<button id="sessionStarter" class="button-primary">Start session</button>
+<button id="sessionStop">Stop session</button>
+</div>
+<script src="js/mootools.js"></script>
+<script src="js/mootools-more.js"></script>
+<script src="js/BoxingTrainer.js"></script>
+<script src="js/AudioQueue.js"></script>
+<script src="js/init_trainer.js"></script>
+</body>
+</html>
